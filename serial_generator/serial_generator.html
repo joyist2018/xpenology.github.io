@@ -15,11 +15,26 @@
 
     <link rel='stylesheet' href='style.css' />
     <script src='script.js'></script>
+
+    <style type="text/css">
+<!--
+.STYLE1 {
+	color: #006699;
+	font-size: xx-large;
+}
+.STYLE2 {color: #FF3300}
+.STYLE4 {color: #FF0000}
+.STYLE6 {color: #FF0000; font-size: 18pt; }
+.STYLE8 {font-size: 18pt}
+-->
+    </style>
 </head>
 
 <body>
 
-    <h1>XPEnology Serial Generator</h1>
+    <h1 class="STYLE1">群晖系列产品序列号计算器</h1>
+      <h2 class="STYLE2"> ——XPEnology Serial Generator——</h2>
+
 
     <div>
         <select name="model" id="model"></select>
@@ -27,9 +42,37 @@
 
         <input id="generate" type=button value="Generate" /><br/><br/>
 
-        <input id="sn" placeholder="Serial number" />
+        <input id="sn" placeholder="Serial number" /><br>
+
+	<a href="https://post.smzdm.com/p/531110/" title="Synology SN序列号生器">参考教程</a>
+
+        <p><br><br>
+        <p>特别说明：<br>
+		<p><b>1、</b>用 ChipEasy芯片无忧 V1.6 Beta3 ，(链接: <a href="http://pan.baidu.com/s/1qXN4sRM">dupan</a> 密码: 5avc )查看优盘的pid  / vid，直接运行软件，会自动把所有硬盘信息读出来，选取U盘即可看到U盘的信息，找到pid 和 vid，记录下来。<br>
+		<p><b>2、</b>用文本编辑器，打开优盘下面 grubgrub.cfg，修改pid, vid，sn,mac1；
+
+其中pid, vid是刚刚查出来的，sn和mac1，则是刚刚算出来的那个。。改完然后保存修改。<br>
+        <p><b>3、</b>如遇到无法正常显示 ，请使用<span class="STYLE6">360极速浏览器切换兼容模式 </span>或者使用<span class="STYLE4"><span class="STYLE8 STYLE4"> IE11 </span>以上的版本浏览器。<br>
+        </p>
     </div>
 
+
+        <p><br><br>
+<a href="https://github.com/joyist2018/xpenology.github.io">github.com</a>
+
+  <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+  <style>
+  	body{text-align: center;
+  		
+  	}
+
+	}
+
+  	
+	   return i;  
+	}  
+	
+  </script>
 </body>
 
 </html>
